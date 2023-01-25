@@ -36,8 +36,13 @@ var empArr=[
 {empId:107,empName:"Saurav",salary:3800,deptId:"D3"}];
 console.log("List of employees to be processed ::: ");
 console.log(empArr);
-let empSorted = empArr.sort((empObj1, empObj2) => (empObj1.salary < empObj2.salary) ? 1 : (empObj1.salary > empObj2.salary) ? -1 : 0);
 
+function getHighestSalariedEmployee(empArr2) {
+    let empSorted = empArr2.sort((empObj1, empObj2) => (empObj1.salary < empObj2.salary) ? 1 : (empObj1.salary > empObj2.salary) ? -1 : 0);
+    return empSorted;
+}
+
+var result =  getHighestSalariedEmployee(empArr);
 console.log("Employee which has the highest Salary :::: ");
-console.log(empSorted[0]);
+console.log(result[0]);
 console.log("----------------------------------------")
