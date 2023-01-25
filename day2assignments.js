@@ -17,12 +17,17 @@ console.log(`Squared array elements [ ${result} ]`);
 console.log("----------------------------------------")
 
 // Create a function which takes in a string which holds a phoneNumber and returns the masked version
-var phoneNumber = "1234567890";
+var phoneNumber = "9443173229597988866";
 console.log(`Before masking the phone number ${phoneNumber}`);
 function createMaskOnPhoneNumber(phoneNumber1){
-    console.log("After masking the phone number " + phoneNumber1.replace(4, '*').replace(5, '*').replace(6, '*'));
+    var firstSet = phoneNumber1.substring(0, 3);
+    var lastSet = phoneNumber1.substring(phoneNumber1.length - 3);
+    var maskSet = phoneNumber1.substring(3, phoneNumber1.length - 3);
+    var maskChars = maskSet.replace(/\d/g, "*");
+    var maskedPhoneNumber = firstSet + maskChars + lastSet;
+    return maskedPhoneNumber;
 }
-createMaskOnPhoneNumber(phoneNumber);
+console.log(createMaskOnPhoneNumber(phoneNumber));
 console.log("----------------------------------------")
 
 //Create a function which takes in array of objects and returns the obj which has the highest salary
