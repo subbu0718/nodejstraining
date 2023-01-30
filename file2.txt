@@ -1,0 +1,4 @@
+I am a file2 content.
+I will be available for read.
+Thank you.
+--------------------------------

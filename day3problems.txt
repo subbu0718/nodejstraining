@@ -1,0 +1,14 @@
+
+
+// Read from 3 files and add all the contents of 3 files into file4 using WriteFile
+// Read from 3 files and add in particular order (file1, file2, file3) into file 4
+// create a html file (login page)
+// create a module - some functions
+// 1. a function with arrOfObj as a parameter, searchSalary; return pos of firstElement which has a particular salary -- arr.findIdex
+// function f1(arrObj, searchSalary): number
+// 2. Add an obj at a particular index position
+// function addEmp(arrObj, emp, position)=> boolean
+// 3. remove an obj from the arrObj
+// function removeEmp(arrObj, emp)
+// 4. Get a particular emp details from arrObj
+// 5. function getEmpDetails(arrObj, empId) => obj
